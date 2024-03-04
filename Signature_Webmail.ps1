@@ -13,7 +13,7 @@ New-Item -path $Log -ItemType File -Force
 
 # Infos de connexion au serveur Exchange
 $Admin_AD = "<Nom_Utilisateur>"
-$MDPAdmin_AD = ConvertTo-SecureString "<Mot_de_Passe" -AsPlainText -Force
+$MDPAdmin_AD = ConvertTo-SecureString "<Mot_de_Passe>" -AsPlainText -Force
 
 # Creation d'une session Remote Powershell vers le Exchange Management Shell
 $credentials = New-Object System.Management.Automation.PSCredential($Admin_AD, $MDPAdmin_AD)
